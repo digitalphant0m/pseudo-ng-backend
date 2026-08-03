@@ -1,19 +1,19 @@
-import { InMemoryDbService } from "angular-in-memory-web-api";
+import { InMemoryDbService } from 'angular-in-memory-web-api';
 
 export class FakeBackendService implements InMemoryDbService {
   createDb() {
-    let tasks = [
+    const tasks = [
       {
         id: 1,
-        description: "Buy Groceries"
+        description: 'Buy Groceries'
       },
       {
         id: 2,
-        description: "Paint the garage"
+        description: 'Paint the garage'
       },
       {
         id: 3,
-        description: "Paint the patio"
+        description: 'Paint the patio'
       }
     ];
 
